@@ -1,3 +1,3 @@
-module github.com/iqquee/bingpay-go
+module github.com/jiyamathias/bingpay-go
 
 go 1.19
