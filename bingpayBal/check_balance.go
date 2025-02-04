@@ -3,10 +3,10 @@ package bingpayBal
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 
-	"github.com/iqquee/bingpay-go"
+	"github.com/jiyamathias/bingpay-go"
 )
 
 type checkBalanceRes struct {
@@ -40,7 +40,7 @@ func CheckBalance() (*checkBalanceRes, int, error) {
 
 	defer resp.Body.Close()
 
-	resp_body, _ := ioutil.ReadAll(resp.Body)
+	resp_body, _ := io.ReadAll(resp.Body)
 	var response checkBalanceRes
 	if err := json.Unmarshal(resp_body, &response); err != nil {
 		return nil, 0, err

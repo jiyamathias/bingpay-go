@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 
-	"github.com/iqquee/bingpay-go"
+	"github.com/jiyamathias/bingpay-go"
 )
 
 type verifyCustomer struct {
@@ -52,7 +52,7 @@ func VerifyCustomer(service_id, customer_id, meter_type string) (*verifyCustomer
 
 	defer resp.Body.Close()
 
-	resp_body, _ := ioutil.ReadAll(resp.Body)
+	resp_body, _ := io.ReadAll(resp.Body)
 	var response verifyCustomerRes
 	if err := json.Unmarshal(resp_body, &response); err != nil {
 		return nil, 0, err

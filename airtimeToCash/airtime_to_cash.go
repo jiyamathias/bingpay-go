@@ -4,10 +4,10 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 
-	"github.com/iqquee/bingpay-go"
+	"github.com/jiyamathias/bingpay-go"
 )
 
 type airtimeToCash struct {
@@ -59,7 +59,7 @@ func AirtimeToCash(amount, network_id int, phone string) (*airtimeToCashRes, int
 
 	defer resp.Body.Close()
 
-	resp_body, _ := ioutil.ReadAll(resp.Body)
+	resp_body, _ := io.ReadAll(resp.Body)
 	var response airtimeToCashRes
 	if err := json.Unmarshal(resp_body, &response); err != nil {
 		return nil, 0, err
