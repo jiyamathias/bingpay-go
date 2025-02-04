@@ -14,11 +14,11 @@ Bingpay-go is a Go library that allows you to integrate BINGPAY into your Go pro
 To install this bingpay package, you need to install [Go](https://golang.org/) and set your Go workspace first.
 1. You can use the below Go command to install BingPay
 ```sh
-$ go get -u github.com/iqquee/bingpay-go
+$ go get -u github.com/jiyamathias/bingpay-go
 ```
 2. Import it in your code:
 ```sh
-import "github.com/iqquee/bingpay-go"
+import "github.com/jiyamathias/bingpay-go"
 ```
 ## Note : All methods in this package returns three (3) things:
 - [x] The object of the response
@@ -39,8 +39,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/bingpayBal"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/bingpayBal"
 )
 
 func main() {
@@ -64,8 +64,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/airtime"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/airtime"
 )
 
 func main() {
@@ -90,8 +90,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/airtime"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/airtime"
 )
 
 func main() {
@@ -117,8 +117,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/airtime"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/airtime"
 )
 
 func main() {
@@ -146,8 +146,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/data"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/data"
 )
 
 func main() {
@@ -171,8 +171,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/data"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/data"
 )
 
 func main() {
@@ -204,8 +204,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/data"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/data"
 )
 
 func main() {
@@ -238,8 +238,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/utilitybills"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/utilitybills"
 )
 
 func main() {
@@ -263,8 +263,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/utilitybills"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/utilitybills"
 )
 
 func main() {
@@ -288,8 +288,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/utilitybills"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/utilitybills"
 )
 
 func main() {
@@ -315,8 +315,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/utilitybills"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/utilitybills"
 )
 
 func main() {
@@ -345,8 +345,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/airtimetocash"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/airtimetocash"
 )
 
 func main() {
@@ -373,8 +373,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/airtimetocash"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/airtimetocash"
 )
 
 func main() {
@@ -401,8 +401,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/indentifyVerifications"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/indentifyVerifications"
 )
 
 func main() {
@@ -430,8 +430,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/indentifyverifications"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/indentifyverifications"
 )
 
 func main() {
@@ -459,8 +459,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/bank"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/bank"
 )
 
 func main() {
@@ -483,8 +483,8 @@ package main
 
 import (
 	"fmt"
-	bingpay "github.com/iqquee/bingpay-go"
-	"github.com/iqquee/bingpay-go/bank"
+	bingpay "github.com/jiyamathias/bingpay-go"
+	"github.com/jiyamathias/bingpay-go/bank"
 )
 
 func main() {
